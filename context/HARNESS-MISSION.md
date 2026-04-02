@@ -28,7 +28,7 @@ Both founders are active business owners who have implemented AI in their own op
 - Handles all aspects: technical, operations, sales, marketing, HR, business development
 
 ### Jordan Schellenberg
-- Criminal Justice graduate, Lethbridge Polytechnic
+- Graduate of Lethbridge Polytechnic
 - President, CEO & Founding Partner of YouthOne — a Lethbridge charity built from the ground up over 12 years
 - YouthOne serves nearly 500 youth per week and raises $650,000+ annually, entirely community-funded
 - Responsible for all fundraising, vision, team leadership, and operations at YouthOne
