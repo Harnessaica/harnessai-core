@@ -29,8 +29,8 @@ Both founders are active business owners who have implemented AI in their own op
 
 ### Jordan Schellenberg
 - Graduate of Lethbridge Polytechnic
-- 12 years building and leading YouthOne from the ground up — President, CEO & Founding Partner
-- Handles all aspects: vision, fundraising, team leadership, and operations
+- 12 years building and leading YouthOne (a nonprofit) from the ground up — President, CEO & Founding Partner
+- Handles all aspects: vision, fundraising, HR, team leadership, and operations
 - Has implemented AI across YouthOne to save time, raise more money, and build better systems
 - Lethbridge Top 40 Under Forty recipient; Lethbridge Polytechnic Honouring Excellence 2025 honouree
 
