@@ -29,10 +29,12 @@ Both founders are active business owners who have implemented AI in their own op
 
 ### Jordan Schellenberg
 - Criminal Justice graduate, Lethbridge Polytechnic
-- Founder and CEO of YouthOne — a Lethbridge-based charity built from the ground up over 12 years
-- Responsible for fundraising, vision, team leadership, and operations at YouthOne
+- President, CEO & Founding Partner of YouthOne — a Lethbridge charity built from the ground up over 12 years
+- YouthOne serves nearly 500 youth per week and raises $650,000+ annually, entirely community-funded
+- Responsible for all fundraising, vision, team leadership, and operations at YouthOne
+- Lethbridge Top 40 Under Forty recipient; Lethbridge Polytechnic Honouring Excellence 2025 honouree
 - Has implemented AI across YouthOne to save staff time, raise more money, and build better systems
-- Wired for problem-solving and systems thinking — consistently looks for ways to improve and build
+- Wired for problem-solving and systems thinking — consistently looks for opportunities to improve and build
 - Co-founder of HarnessAI, bringing real-world nonprofit leadership and operational experience
 
 ## What Both Founders Share
