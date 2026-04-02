@@ -3,7 +3,7 @@
 ## The Business
 HarnessAI is an AI consulting firm based in Lethbridge, Alberta, Canada.
 Domain: harnessai.ca
-Founders: Tyrell Foreman, Jordan (jordan@youthone.ca)
+Founders: Tyrell Foreman, Jordan Schellenberg
 
 ## Who We Serve
 Small businesses in southern Alberta — primarily:
