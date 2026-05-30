@@ -18,6 +18,7 @@ You're being handed a spec ([CLIENT_VETTING_FRAMEWORK.md](./CLIENT_VETTING_FRAME
 2. **AI Organizational Assessment** — Alternative diagnostic entry product.
 3. **Maintain & Optimize** — Ongoing monthly subscription. HarnessAI builds, maintains, debugs, and optimizes.
 4. **Teach Yourself** — Ongoing relationship where the client learns to maintain/build on their own with HarnessAI guidance.
+5. **Bespoke Project** — One-off custom build, scoped and quoted individually (no fixed price, estimated against the $250/hr target). For finite, well-defined projects that don't fit the recurring or entry products.
 
 ## Economics (drives why vetting matters)
 

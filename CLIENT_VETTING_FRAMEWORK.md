@@ -2,7 +2,7 @@
 
 ## Overview
 
-This framework evaluates prospective clients across four key dimensions to ensure they're a strong fit for one of three service paths: **QuickWin**, **Maintain & Optimize**, or **Teach Yourself**.
+This framework evaluates prospective clients across four key dimensions to ensure they're a strong fit for one of our service paths: **QuickWin**, **AI Organizational Assessment**, **Maintain & Optimize**, **Teach Yourself**, or a **Bespoke Project**.
 
 This document is intended to be used as a specification to build a web-based intake/evaluation form on the HarnessAI.ca website. The form will store client information in a backend database, becoming a documented record for both prospective and active clients.
 
@@ -22,6 +22,7 @@ This document is intended to be used as a specification to build a web-based int
 2. **AI Organizational Assessment** — Alternative entry point. A diagnostic engagement that produces a roadmap.
 3. **Maintain & Optimize** — Ongoing monthly subscription where HarnessAI handles build, maintain, debug, and optimize.
 4. **Teach Yourself (Enablement)** — Ongoing relationship where HarnessAI teaches the client to maintain, debug, and build on their own.
+5. **Bespoke Project** — One-off custom build, scoped and quoted individually. No fixed price; pricing is estimated from scope against the $250/hr target rate. Used for well-defined, finite projects that don't fit the recurring or entry products. Does not consume a Maintain & Optimize slot, but the co-founder must confirm capacity before committing.
 
 The vetting framework determines which path a prospective client fits best.
 
@@ -145,6 +146,7 @@ After the call, score each dimension and calculate total.
 - **AI Organizational Assessment** → Strong readiness but unclear scope or strategy. Diagnostic-first.
 - **Maintain & Optimize** → Strong readiness, strong collaboration, clear goals. Moderate-to-low technical capability. Wants ongoing partnership.
 - **Teach Yourself** → Strong readiness, strong technical capability, high learning willingness. Wants to own the build and maintain path.
+- **Bespoke Project** → A specific, well-defined one-off need with no appetite for an ongoing relationship. Score thresholds still apply, but path is driven by scope (finite deliverable) rather than ongoing-fit. Quote custom against scope and the $250/hr target.
 
 ## Data Schema (for the web form / database)
 
@@ -202,7 +204,7 @@ Suggested fields for the prospective client record:
 
 ### Outcome
 
-- recommended_path (enum: QuickWin, AI_Org_Assessment, Maintain_Optimize, Teach_Yourself, Decline, Revisit_Later)
+- recommended_path (enum: QuickWin, AI_Org_Assessment, Maintain_Optimize, Teach_Yourself, Bespoke_Project, Decline, Revisit_Later)
 - decision (enum: accept, decline, hold)
 - decision_rationale (text)
 - evaluator (string — which co-founder ran the call)
@@ -214,9 +216,10 @@ Once a prospect is accepted and signed, the same record extends into onboarding.
 
 #### Engagement
 
-- engagement_service (enum: QuickWin, AI_Org_Assessment, Maintain_Optimize, Teach_Yourself)
+- engagement_service (enum: QuickWin, AI_Org_Assessment, Maintain_Optimize, Teach_Yourself, Bespoke_Project)
 - engagement_start_date (date)
-- price_agreed (decimal, CAD)
+- price_agreed (decimal, CAD — for Bespoke_Project, the custom-quoted total)
+- quote_basis (text — for Bespoke_Project: estimated hours × rate and scope assumptions behind the quote)
 - sow_signed (boolean)
 - sow_link (URL — Google Drive)
 - contract_signed_date (date)
