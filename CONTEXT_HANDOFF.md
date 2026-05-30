@@ -6,8 +6,9 @@ You're being handed a spec ([CLIENT_VETTING_FRAMEWORK.md](./CLIENT_VETTING_FRAME
 
 ## Who is HarnessAI?
 
-- AI consulting firm based in Lethbridge, Alberta (Tyrell is the founder; one co-founder named Rev who handles parallel automation work).
+- AI consulting firm based in Lethbridge, Alberta. Co-founders: **Tyrell Foreman** and **Jordan Schellenberg**.
 - Tyrell also runs Backyard Leisure (pool/spa retail, 30+ years) and TubSupplies.ca (Shopify).
+- Jordan built and led YouthOne (nonprofit) for 12 years as President/CEO/Founding Partner — vision, fundraising, HR, team leadership, operations.
 - HarnessAI is being actively built out alongside those other businesses.
 - The two co-founders intend to work roughly half-time on HarnessAI.
 

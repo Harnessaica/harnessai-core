@@ -8,7 +8,8 @@ This document is intended to be used as a specification to build a web-based int
 
 ## Business Context (for the developer building this)
 
-- **HarnessAI.ca** is an AI consulting firm with two co-founders working ~half-time on the business.
+- **HarnessAI.ca** is an AI consulting firm with two co-founders (Tyrell Foreman, Jordan Schellenberg) working ~half-time on the business.
+- **Target market: small businesses, roughly 1–100 employees** — primarily trades/contractors and agriculture/rural businesses in southern Alberta. Anything larger is out of scope for current capacity.
 - Capacity model: 10 clients each (20 total), ~6 hours per client per month on the maintain product line.
 - Target billable rate: **$250 CAD/hour**.
 - Subscription pricing for Maintain & Optimize: **$1,250–$1,500/month** per client.
@@ -156,7 +157,7 @@ Suggested fields for the prospective client record:
 - primary_contact_role (string)
 - primary_contact_email (string, required)
 - primary_contact_phone (string)
-- company_size (enum: 1-10, 11-50, 51-200, 201-1000, 1000+)
+- company_size (enum: 1-10, 11-25, 26-50, 51-100, 100+ [out of target])
 - industry (string)
 - location (string)
 - website (string)
@@ -206,6 +207,51 @@ Suggested fields for the prospective client record:
 - decision_rationale (text)
 - evaluator (string — which co-founder ran the call)
 - evaluator_secondary (string — second co-founder's independent review, optional)
+
+### Post-Acceptance Onboarding
+
+Once a prospect is accepted and signed, the same record extends into onboarding. These fields turn the vetted prospect into an active client engagement.
+
+#### Engagement
+
+- engagement_service (enum: QuickWin, AI_Org_Assessment, Maintain_Optimize, Teach_Yourself)
+- engagement_start_date (date)
+- price_agreed (decimal, CAD)
+- sow_signed (boolean)
+- sow_link (URL — Google Drive)
+- contract_signed_date (date)
+
+#### Their Business (operational detail beyond intake)
+
+- team_size (int)
+- key_tools_in_use (array of strings — software/spreadsheets/etc.)
+- main_pain_point (text — confirmed at onboarding, may differ from intake)
+
+#### Access Needed
+
+- access_items (array of {system_name, status: requested/granted/declined, granted_date})
+
+#### Linked Files (Google Drive)
+
+- proposal_url (URL)
+- signed_contract_url (URL)
+- deliverables_url (URL)
+
+#### Onboarding Notes
+
+- onboarding_notes (text — anything else relevant from initial conversations)
+
+## Onboarding Checklist (post-signing, off-form)
+
+A quick checklist the co-founder can run after a record moves to `active` status:
+
+- [ ] Engagement service confirmed and start date set
+- [ ] Price agreed and SOW signed
+- [ ] Industry, team size, key tools captured
+- [ ] Main pain point confirmed (may differ from intake)
+- [ ] Access requested for all required systems/tools
+- [ ] Google Drive client folder created (proposal, contract, deliverables linked)
+- [ ] Kickoff meeting scheduled
 
 ## Implementation Notes for Claude Code
 
